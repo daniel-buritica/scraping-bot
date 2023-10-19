@@ -1,0 +1,30 @@
+# Archivos de configuración de PyCharm
+.idea/
+
+# Archivos compilados o generados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Carpeta virtualenv
+venv/
+
+# Registros y archivos de registro
+*.log
+
+# Archivo de configuración local
+*.ini
+
+# Archivos generados por linters, como flake8
+*.pyflakes
+
+# Archivos de caché
+.ccache/
+
+# Documentación generada
+docs/_build/
+
+# Archivos de datos o de caché generados por el proyecto
+data/
+.cache/
