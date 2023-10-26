@@ -16,15 +16,17 @@ def scraper(url):
         img_url = img.get_attribute("src")
         data = to_model(title, price, img_url)
         insert_db(data)
-        break
-
-
-
-
-
-
+        print(1)
 
 
 
 scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
