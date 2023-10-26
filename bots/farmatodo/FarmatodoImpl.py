@@ -1,6 +1,7 @@
-# from config.database.RepositoryDB import insert_db
+from config.database.RepositoryDB import insert_db
 from config.scrapper.ConfigWebDriverScrapper import setting_options_argument
 from selenium.webdriver.common.by import By
+from bots.farmatodo.util.MapperFarmaTodo import to_model
 
 
 def scraper(url):
@@ -8,17 +9,22 @@ def scraper(url):
     driver.get(url)
     products = driver.find_elements(By.CSS_SELECTOR, "div.card-unique")
 
-    for producto in products:
-        #title = producto.find_element(By.CSS_SELECTOR, "p.text-title").text
-        #price = producto.find_element(By.CSS_SELECTOR, "span.text-price").text
+    for product in products:
+        title = product.find_element(By.CSS_SELECTOR, "p.text-title").text
+        price = product.find_element(By.CSS_SELECTOR, "span.text-price").text
+        img = product.find_element(By.CSS_SELECTOR, "img.image")
+        img_url = img.get_attribute("src")
+        data = to_model(title, price, img_url)
+        insert_db(data)
+        break
 
-        img = producto.find_element(By.CSS_SELECTOR, "img.image-virtual")
-        print(img.get_attribute("class"))
-        #print(title)
-        #print(price)
-        #print(img)
 
-    driver.quit()
+
+
+
+
+
+
 
 scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
 
