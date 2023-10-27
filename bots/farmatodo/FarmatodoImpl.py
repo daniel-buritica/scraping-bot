@@ -18,6 +18,8 @@ def scraper(url):
         insert_db(data)
         print(1)
 
+    driver.quit()
+
 
 
 scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
