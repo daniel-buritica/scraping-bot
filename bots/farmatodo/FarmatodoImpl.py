@@ -16,7 +16,6 @@ def scraper(url):
         img_url = img.get_attribute("src")
         data = to_model(title, price, img_url)
         insert_db(data)
-        print(1)
 
     driver.quit()
 
