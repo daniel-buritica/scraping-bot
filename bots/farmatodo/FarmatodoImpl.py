@@ -21,12 +21,4 @@ def scraper(url):
 
 
 scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
-scraper("https://www.farmatodo.com.co/mundo-ofertas/49092")
+
