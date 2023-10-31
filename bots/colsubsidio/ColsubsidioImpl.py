@@ -12,7 +12,6 @@ def scraper(url):
     time.sleep(10)
     products = driver.find_elements(By.CSS_SELECTOR, "div.ImpreseeItem")
 
-
     for product in products:
         title = product.find_element(By.CSS_SELECTOR, "span.ImpreseeTitle").text
         price = product.find_element(By.CSS_SELECTOR, "span.ImpreseePrice").text
@@ -21,10 +20,7 @@ def scraper(url):
         data = to_model(title, price, img_url)
         insert_db(data)
 
-
     driver.quit()
 
 
-
 scraper("https://www.drogueriascolsubsidio.com/?IText=bloqueador")
-
