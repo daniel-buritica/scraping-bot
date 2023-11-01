@@ -15,7 +15,7 @@ def scraper(url):
         button.click()
         break
 
-    time.sleep(3)
+    time.sleep(5)
     products = driver.find_elements(By.CSS_SELECTOR, "ml-card-product.ng-star-inserted")
 
     for product in products:

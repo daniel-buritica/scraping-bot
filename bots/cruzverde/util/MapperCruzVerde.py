@@ -7,6 +7,6 @@ def to_model(title, price, url_img):
     data.name = title
     data.price = float(price.replace("$ ", "").replace(".", ""))
     data.image = url_img
-    data.origin = "Cruz Verde"
+    data.origin = "CRUZ VERDE"
     return data
 

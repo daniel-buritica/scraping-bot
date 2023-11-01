@@ -8,7 +8,7 @@ def get_connection():
             host="localhost",
             database="webscraping",
             user="postgres",
-            password="admin",
+            password="1234",
             port="5432"
         )
     except Exception as e:

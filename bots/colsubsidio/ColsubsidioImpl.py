@@ -3,7 +3,7 @@ import time
 from config.database.RepositoryDB import insert_db
 from config.scrapper.ConfigWebDriverScrapper import setting_options_argument
 from selenium.webdriver.common.by import By
-from bots.farmatodo.util.MapperFarmaTodo import to_model
+from bots.colsubsidio.util.MapperColsubsidio import to_model
 
 
 def scraper(url):

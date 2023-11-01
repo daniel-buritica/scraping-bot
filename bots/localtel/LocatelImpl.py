@@ -9,7 +9,7 @@ def scraper(url):
     driver = setting_options_argument()
     driver.get(url)
     products = driver.find_elements(By.CSS_SELECTOR, "section.vtex-product-summary-2-x-container")
-
+    time.sleep(5)
     for product in products:
         title = product.find_element(By.CSS_SELECTOR, "span.vtex-product-summary-2-x-productBrand").text
         price = product.find_element(By.CSS_SELECTOR, "span.vtex-product-summary-2-x-currencyInteger").text + "000"
